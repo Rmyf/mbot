@@ -1,7 +1,11 @@
 {
   "name": "mbot",
   "version": "0.0.1",
+<<<<<<< HEAD
   "description": "mbot web interface",
+=======
+  "description": "",
+>>>>>>> 29fc59ffe63b698a1fae4fd04ebbe5e90e6b63ca
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,6 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/Rmyf/mbot.git"
   },
+<<<<<<< HEAD
   "author": "",
   "license": "MIT",
   "bugs": {
@@ -20,4 +25,12 @@
     "express": "^4.15.4",
     "johnny-five": "^0.11.5"
   }
+=======
+  "author": "remy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rmyf/mbot/issues"
+  },
+  "homepage": "https://github.com/Rmyf/mbot#readme"
+>>>>>>> 29fc59ffe63b698a1fae4fd04ebbe5e90e6b63ca
 }
