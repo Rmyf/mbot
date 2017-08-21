@@ -1,0 +1,23 @@
+{
+  "name": "mbot",
+  "version": "0.0.1",
+  "description": "mbot web interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rmyf/mbot.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rmyf/mbot/issues"
+  },
+  "homepage": "https://github.com/Rmyf/mbot#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "johnny-five": "^0.11.5"
+  }
+}
