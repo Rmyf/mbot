@@ -1,8 +1,10 @@
-document.body.querySelector('#up').addEventListener("click", function () {
-    // let message = document.querySelector('#message').value;
+console.log("init");
+document.querySelector('#up').addEventListener("click", function () {
+    console.log("clicked");
     let xhr = new XMLHttpRequest();
     xhr.open('GET', '/forward', true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.send();
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
