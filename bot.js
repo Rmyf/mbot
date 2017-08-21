@@ -14,7 +14,7 @@ class Robot {
         this.board = new five.Board({
             port: "/dev/ttyUSB0"
         });
-        this.board.on('ready', function () {
+        this.board.on('ready', function() {
             that.leftMotor = new five.Motor({
                 pins: {
                     pwm: 6,
@@ -39,19 +39,44 @@ class Robot {
         this.rightMotor.forward(140);
 
         let self = this;
-        setTimeout(function () {
+        setTimeout(function() {
             self.leftMotor.stop();
             self.rightMotor.stop();
         }, 250);
     }
-    moveBack(){
+    moveBack() {
+
+        this.leftMotor.forward(150);
+        this.rightMotor.reverse(140);
+
+        let self = this;
+        setTimeout(function() {
+            self.leftMotor.stop();
+            self.rightMotor.stop();
+        }, 250);
 
     }
-    moveLeft(){
+    moveLeft() {
+        this.leftMotor.forward(150);
+        this.rightMotor.forward(140);
+
+        let self = this;
+        setTimeout(function() {
+            self.leftMotor.stop();
+            self.rightMotor.stop();
+        }, 250);
 
     }
-    moveRight(){
-        
+    moveRight() {
+        this.leftMotor.reverse(150);
+        this.rightMotor.reverse(140);
+
+        let self = this;
+        setTimeout(function() {
+            self.leftMotor.stop();
+            self.rightMotor.stop();
+        }, 250);
+
     }
 
     stop() {
