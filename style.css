@@ -1,0 +1,9 @@
+.controller {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.security {
+    align-items: flex-start;
+}

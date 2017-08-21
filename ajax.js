@@ -1,12 +1,12 @@
 document.body.querySelector('#up').addEventListener("click", function () {
-    let message = document.querySelector('#message').value;
+    // let message = document.querySelector('#message').value;
     let xhr = new XMLHttpRequest();
-    xhr.open('POST', 'bot/up.js', true);
+    xhr.open('GET', '/forward', true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             if (xhr.status === 200) {
-                return true;
+                console.log("up");
             }
         }
     }
