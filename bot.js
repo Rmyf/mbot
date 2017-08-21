@@ -44,6 +44,15 @@ class Robot {
             self.rightMotor.stop();
         }, 250);
     }
+    moveBack(){
+
+    }
+    moveLeft(){
+
+    }
+    moveRight(){
+        
+    }
 
     stop() {
         this.leftMotor.stop();

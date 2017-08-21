@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .controller {
     display: flex;
     flex-direction: column;
@@ -8,14 +7,3 @@
 .security {
     align-items: flex-start;
 }
-=======
-    .controller {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .security {
-        align-items: flex-start;
-    }
->>>>>>> 29fc59ffe63b698a1fae4fd04ebbe5e90e6b63ca
