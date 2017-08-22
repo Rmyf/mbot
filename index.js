@@ -10,7 +10,9 @@ app.use(express.static('./'));
 
 app.post('/forward', function (req, res) {
   res.sendStatus(200);
-  bot.moveForward();
+  if (bot.vide() >10){
+    bot.moveForward();
+  }
 });
 
 app.post('/backward', function (req, res) {
@@ -26,6 +28,10 @@ app.post('/left', function (req, res) {
 app.post('/right', function (req, res) {
   res.sendStatus(200);
   bot.moveRight();
+});
+app.post('/vide', function (req, res) {
+  res.sendStatus(200);
+  bot.vide();
 });
 
 
