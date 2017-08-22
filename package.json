@@ -1,36 +1,24 @@
 {
-  "name": "mbot",
-  "version": "0.0.1",
-<<<<<<< HEAD
-  "description": "mbot web interface",
-=======
-  "description": "",
->>>>>>> 29fc59ffe63b698a1fae4fd04ebbe5e90e6b63ca
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Rmyf/mbot.git"
-  },
-<<<<<<< HEAD
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Rmyf/mbot/issues"
-  },
-  "homepage": "https://github.com/Rmyf/mbot#readme",
-  "dependencies": {
-    "express": "^4.15.4",
-    "johnny-five": "^0.11.5"
-  }
-=======
-  "author": "remy",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Rmyf/mbot/issues"
-  },
-  "homepage": "https://github.com/Rmyf/mbot#readme"
->>>>>>> 29fc59ffe63b698a1fae4fd04ebbe5e90e6b63ca
+    "name": "mbot",
+    "version": "0.0.1",
+    "description": "mbot web interface",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Rmyf/mbot.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Rmyf/mbot/issues"
+    },
+    "homepage": "https://github.com/Rmyf/mbot#readme",
+    "dependencies": {
+        "chart.js": "^2.6.0",
+        "express": "^4.15.4",
+        "johnny-five": "^0.11.5"
+    }
 }
