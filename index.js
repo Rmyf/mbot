@@ -4,37 +4,32 @@ let app = express();
 
 let bot = new Robot();
 bot.start();
-app.get('/forward', function(req, res) {
 
-    bot.moveForward();
-
-});
-app.get('/', function(req, res) {
-    res.sendFile(__dirname + "/index.html");
-});
-app.listen(3000, function() {
-    console.log('Example app listening on port 3000!');
-});
-
-app.get('/backward', function(req, res) {
-
-    bot.moveBack();
-
-});
-app.get('/left', function(req, res) {
-
-    bot.moveLeft();
-
-});
-app.get('/right', function(req, res) {
-
-    bot.moveRight();
-});
-// app.get('/', function (req, res) {
-//   res.sendFile(__dirname + "/index.html");
-// });
 
 app.use(express.static('./'));
-app.listen(3000, function() {
-    console.log('Example app listening on port 3000!');
+
+app.post('/forward', function (req, res) {
+  res.sendStatus(200);
+  bot.moveForward();
+});
+
+app.post('/backward', function (req, res) {
+  res.sendStatus(200);
+  bot.moveBack();
+
+});
+app.post('/left', function (req, res) {
+  res.sendStatus(200);
+  bot.moveLeft();
+
+});
+app.post('/right', function (req, res) {
+  res.sendStatus(200);
+  bot.moveRight();
+});
+
+
+
+app.listen(3000, function () {
+  console.log('Example app listening on port 3000!');
 });
