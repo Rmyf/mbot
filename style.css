@@ -1,9 +1,10 @@
 .controller {
+    margin-left: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.security {
-    align-items: flex-start;
+.container {
+    background-color: black;
 }

@@ -9,7 +9,6 @@ app.get('/forward', function(req, res) {
     bot.moveForward();
 
 });
-<<<<<<< HEAD
 app.get('/', function(req, res) {
     res.sendFile(__dirname + "/index.html");
 });
@@ -32,13 +31,4 @@ app.get('/right', function(req, res) {
 
     bot.moveRight();
 
-=======
-// app.get('/', function (req, res) {
-//   res.sendFile(__dirname + "/index.html");
-// });
-
-app.use(express.static('./'));
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
->>>>>>> fcfc7241259f08edada56051b825091d00094b7c
 });
