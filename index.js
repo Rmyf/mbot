@@ -16,7 +16,6 @@ app.listen(3000, function() {
     console.log('Example app listening on port 3000!');
 });
 
-
 app.get('/backward', function(req, res) {
 
     bot.moveBack();
@@ -30,5 +29,12 @@ app.get('/left', function(req, res) {
 app.get('/right', function(req, res) {
 
     bot.moveRight();
+});
+// app.get('/', function (req, res) {
+//   res.sendFile(__dirname + "/index.html");
+// });
 
+app.use(express.static('./'));
+app.listen(3000, function() {
+    console.log('Example app listening on port 3000!');
 });
