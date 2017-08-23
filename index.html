@@ -13,7 +13,18 @@
 </head>
 
 <body class="container">
-    <h1 style="color: white; margin-top:40px">MBOT Remote</h1>
+    <div class="flex">
+        <div class="title">
+            <h1 style="color: white; margin-top:40px;margin-bottom:80px">MBOT Remote</h1>
+        </div>
+        <div class="led-controller" style="margin-top:80px;margin-right:180px" ;>
+            <p style="color: white"> Led Controller</p>
+            <button type="button " class="btn btn-success "></button>
+            <button type="button " class="btn btn-danger "></button>
+            <button type="button " class="btn btn-warning "></button>
+            <button type="button " class="btn btn-primary "></button>
+        </div>
+    </div>
 
     <div class="controller">
         <div class="top">
@@ -32,15 +43,15 @@
             <button id="horn">/!\</button>
         </div>
     </div>
-    <div class="box">
-        <div class="picture">
-            <img src="./photo/mbot.png" alt="mbot">
+
+    <div class="box ">
+        <div class="picture ">
+            <img src="./photo/mbot.png " alt="mbot ">
         </div>
 
-        <canvas id="myChart" width="490" height="335" style="background-color:white"></canvas>
+        <canvas id="myChart " width="490 " height="335 " style="background-color:white "></canvas>
         <script>
-            var = Chart;
-            var ctx = document.getElementById("myChart").getContext('2d');
+            var ctx = document.getElementById("myChart ").getContext('2d');
             var myChart = new Chart(ctx, {
                 type: 'bar',
                 data: {

@@ -3,7 +3,6 @@ var five = require("johnny-five");
 class Robot {
     constructor() {
         this.modules = [];
-        this.eyesVal;
     }
 
     addModule(module) {
@@ -15,7 +14,7 @@ class Robot {
         this.board = new five.Board({
             port: "/dev/ttyUSB0"
         });
-        this.board.on('ready', function () {
+        this.board.on('ready', function() {
             that.eyes = new five.IR.Reflect.Array({
                 emitter: 13,
                 pins: ["A3", "A2"], // any number of pins
@@ -34,24 +33,19 @@ class Robot {
                     dir: 4
                 }
             });
-
             for (let module of that.modules) {
                 module.init(that);
             }
-            that.eyes.enable();
-            that.eyes.on('line', function () {
-                that.eyesVal = this.line;
-            });
         });
-        
     }
 
     moveForward() {
+
         this.leftMotor.reverse(150);
         this.rightMotor.forward(140);
 
         let self = this;
-        setTimeout(function () {
+        setTimeout(function() {
             self.leftMotor.stop();
             self.rightMotor.stop();
         }, 250);
@@ -62,7 +56,7 @@ class Robot {
         this.rightMotor.reverse(140);
 
         let self = this;
-        setTimeout(function () {
+        setTimeout(function() {
             self.leftMotor.stop();
             self.rightMotor.stop();
         }, 250);
@@ -73,7 +67,8 @@ class Robot {
         this.rightMotor.forward(140);
 
         let self = this;
-        setTimeout(function () {
+        setTimeoutres.sendStatus(200);
+        (function() {
             self.leftMotor.stop();
             self.rightMotor.stop();
         }, 250);
@@ -84,21 +79,30 @@ class Robot {
         this.rightMotor.reverse(140);
 
         let self = this;
-        setTimeout(function () {
+        setTimeout(function() {
             self.leftMotor.stop();
             self.rightMotor.stop();
         }, 250);
 
     }
 
-    stop() {
+    stop() {res.sendStatus(200);
         this.leftMotor.stop();
         this.rightMotor.stop();
-    }
-    vide() {
-        let value = this.eyesVal;
-        return value;
+
     }
 }
+
+
+eyes.on('data', function() {
+    console.log("Raw Values: ", this.raw);
+});
+
+eyes.on('line', function() {
+    console.log("Line Position: ", this.line);
+});
+
+eyes.enable();
+});
 
 module.exports = Robot;
