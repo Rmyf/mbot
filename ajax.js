@@ -27,9 +27,9 @@ document.body.querySelector('#right').addEventListener("click", function() {
     xhr.send();
 });
 
-document.body.querySelector('#stop').addEventListener("click", function() {
-    console.log("clicked");
-    let xhr = new XMLHttpRequest();
-    xhr.open('POST', '/vide', true);
-    xhr.send();
-});
+// document.body.querySelector('#stop').addEventListener("click", function() {
+//     console.log("clicked");
+//     let xhr = new XMLHttpRequest();
+//     xhr.open('POST', '/vide', true);
+//     xhr.send();
+// });
